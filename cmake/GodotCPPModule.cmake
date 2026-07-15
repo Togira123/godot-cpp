@@ -94,8 +94,9 @@ function(
 )
     # This code snippet will be squashed into a single line
     set(PYTHON_SCRIPT
-        "from binding_generator import generate_bindings"
-        "generate_bindings(
+        "from binding_generator import BindingGenerator"
+        "binding_generator = BindingGenerator()"
+        "binding_generator.generate_bindings(
     api_filepath='${API_FILE}',
     interface_filepath='${INTERFACE_FILE}',
     use_template_get_node='${USE_TEMPLATE_GET_NODE}',

@@ -1,3 +1,4 @@
+import importlib.util
 import os
 import platform
 import sys
@@ -12,7 +13,7 @@ from SCons.Tool import Tool
 from SCons.Variables import BoolVariable, EnumVariable, PathVariable
 from SCons.Variables.BoolVariable import _text2bool
 
-from binding_generator import _generate_bindings, _get_file_list, get_file_list
+from binding_generator import BindingGenerator, _get_file_list, get_file_list
 from build_profile import generate_trimmed_api
 from doc_source_generator import scons_generate_doc_source
 
@@ -163,8 +164,19 @@ def scons_generate_bindings(target, source, env):
         profile_filepath = normalize_path(profile_filepath, env)
 
     api = generate_trimmed_api(str(source[0]), profile_filepath)
-
-    _generate_bindings(
+    binding_generator: BindingGenerator
+    if "binding_hook_file" in env:
+        binding_hook_file = env["binding_hook_file"]
+        # yes apparently this is how you import a file dynamically ._.
+        spec = importlib.util.spec_from_file_location("custom_binding_generator", binding_hook_file)
+        loaded_module = importlib.util.module_from_spec(spec)
+        sys.modules["custom_binding_generator"] = loaded_module
+        spec.loader.exec_module(loaded_module)
+        # assume the name 'BindingGeneratorExtension' for the class
+        binding_generator = loaded_module.BindingGeneratorExtension()
+    else:
+        binding_generator = BindingGenerator()
+    binding_generator._generate_bindings(
         api,
         str(source[0]),
         str(source[1]),
@@ -229,6 +241,15 @@ def options(opts, env):
         default_platform = ARGUMENTS.get("platform")
     else:
         raise ValueError("Could not detect platform automatically, please specify with platform=<platform>")
+
+    opts.Add(
+        PathVariable(
+            key="binding_hook_file",
+            help="Path to python file containing a custom binding generator",
+            default=env.get("binding_hook_file", None),
+            validator=validate_file,
+        )
+    )
 
     opts.Add(
         PathVariable(

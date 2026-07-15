@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(1, os.path.join(os.path.dirname(__file__), "..", ".."))
 
-from binding_generator import _generate_bindings, _get_file_list
+from binding_generator import BindingGenerator, _get_file_list
 from build_profile import generate_trimmed_api
 
 api_filepath = "gdextension/extension_api.json"
@@ -18,7 +18,8 @@ output_dir = "self_test"
 
 def test(profile_filepath=""):
     api = generate_trimmed_api(api_filepath, profile_filepath)
-    _generate_bindings(
+    binding_generator = BindingGenerator()
+    binding_generator._generate_bindings(
         api,
         api_filepath,
         interface_filepath,
