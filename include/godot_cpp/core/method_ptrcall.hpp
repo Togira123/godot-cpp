@@ -30,8 +30,6 @@
 
 #pragma once
 
-#include <godot_cpp/core/defs.hpp>
-
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/godot.hpp>
 #include <godot_cpp/variant/variant.hpp>

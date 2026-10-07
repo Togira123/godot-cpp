@@ -35,7 +35,6 @@
 #include <godot_cpp/variant/aabb.hpp>
 #include <godot_cpp/variant/basis.hpp>
 #include <godot_cpp/variant/packed_vector3_array.hpp>
-#include <godot_cpp/variant/plane.hpp>
 
 namespace godot {
 

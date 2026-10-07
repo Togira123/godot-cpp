@@ -30,15 +30,11 @@
 
 #pragma once
 
-#include <godot_cpp/core/defs.hpp>
-
 #include <godot_cpp/classes/global_constants.hpp>
 
 #include <godot_cpp/variant/variant.hpp>
 
 #include <godot_cpp/godot.hpp>
-
-#include <gdextension_interface.h>
 
 namespace godot {
 

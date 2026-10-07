@@ -30,11 +30,7 @@
 
 #pragma once
 
-#include <godot_cpp/core/error_macros.hpp>
 #include <godot_cpp/core/math_funcs_binary.hpp>
-#include <godot_cpp/core/memory.hpp>
-#include <godot_cpp/templates/sort_array.hpp>
-#include <godot_cpp/templates/span.hpp>
 #include <godot_cpp/templates/vector.hpp>
 
 #include <initializer_list>

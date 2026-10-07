@@ -31,7 +31,6 @@
 #pragma once
 
 #include <atomic>
-#include <godot_cpp/core/defs.hpp>
 
 namespace godot {
 

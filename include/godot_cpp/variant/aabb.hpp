@@ -31,7 +31,6 @@
 #pragma once
 
 #include <godot_cpp/variant/plane.hpp>
-#include <godot_cpp/variant/vector3.hpp>
 
 /**
  * AABB (Axis Aligned Bounding Box)

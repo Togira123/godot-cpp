@@ -36,8 +36,6 @@
 
 #include <godot_cpp/core/type_info.hpp>
 #include <godot_cpp/templates/pair.hpp>
-#include <godot_cpp/variant/dictionary.hpp>
-#include <godot_cpp/variant/variant.hpp>
 
 namespace godot {
 

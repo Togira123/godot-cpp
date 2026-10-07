@@ -30,7 +30,6 @@
 
 #pragma once
 
-#include <godot_cpp/variant/array.hpp>
 #include <godot_cpp/variant/variant.hpp>
 
 namespace godot {

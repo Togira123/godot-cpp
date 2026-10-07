@@ -34,23 +34,8 @@
 #include <intrin.h> // Needed for `__umulh` below.
 #endif
 
-#include <godot_cpp/core/math.hpp>
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/templates/pair.hpp>
-#include <godot_cpp/variant/aabb.hpp>
-#include <godot_cpp/variant/node_path.hpp>
-#include <godot_cpp/variant/rect2.hpp>
-#include <godot_cpp/variant/rect2i.hpp>
-#include <godot_cpp/variant/rid.hpp>
-#include <godot_cpp/variant/string.hpp>
-#include <godot_cpp/variant/string_name.hpp>
-#include <godot_cpp/variant/variant.hpp>
-#include <godot_cpp/variant/vector2.hpp>
-#include <godot_cpp/variant/vector2i.hpp>
-#include <godot_cpp/variant/vector3.hpp>
-#include <godot_cpp/variant/vector3i.hpp>
-#include <godot_cpp/variant/vector4.hpp>
-#include <godot_cpp/variant/vector4i.hpp>
 
 /**
  * Hashing functions

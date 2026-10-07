@@ -30,7 +30,6 @@
 
 #pragma once
 
-#include <godot_cpp/core/error_macros.hpp>
 #include <godot_cpp/core/math.hpp>
 #include <godot_cpp/variant/string.hpp>
 

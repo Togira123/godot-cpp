@@ -32,8 +32,6 @@
 
 #include <gdextension_interface.h>
 
-#include <godot_cpp/core/defs.hpp>
-#include <godot_cpp/core/method_ptrcall.hpp>
 #include <godot_cpp/core/type_info.hpp>
 
 #include <array>

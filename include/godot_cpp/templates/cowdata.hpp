@@ -31,7 +31,6 @@
 #pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
-#include <godot_cpp/core/error_macros.hpp>
 #include <godot_cpp/core/math.hpp>
 #include <godot_cpp/core/memory.hpp>
 #include <godot_cpp/templates/safe_refcount.hpp>

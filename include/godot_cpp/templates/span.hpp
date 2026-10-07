@@ -30,7 +30,6 @@
 
 #pragma once
 
-#include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/core/error_macros.hpp>
 
 namespace godot {

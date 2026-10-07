@@ -30,21 +30,13 @@
 
 #pragma once
 
-#include <godot_cpp/core/defs.hpp>
-
 #include <godot_cpp/core/object_id.hpp>
 
 #include <godot_cpp/core/property_info.hpp>
 
-#include <godot_cpp/variant/variant.hpp>
-
 #include <godot_cpp/templates/local_vector.hpp>
 
 #include <godot_cpp/classes/object.hpp>
-
-#include <godot_cpp/godot.hpp>
-
-#include <gdextension_interface.h>
 
 #define ADD_SIGNAL(m_signal) ::godot::ClassDB::add_signal(get_class_static(), m_signal)
 #define ADD_GROUP(m_name, m_prefix) ::godot::ClassDB::add_property_group(get_class_static(), m_name, m_prefix)

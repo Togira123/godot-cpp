@@ -33,7 +33,6 @@
 #include <godot_cpp/templates/vector.hpp>
 #include <godot_cpp/variant/packed_vector2_array.hpp>
 #include <godot_cpp/variant/rect2.hpp>
-#include <godot_cpp/variant/vector2.hpp>
 
 namespace godot {
 

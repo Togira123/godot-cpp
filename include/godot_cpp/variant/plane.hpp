@@ -30,7 +30,6 @@
 
 #pragma once
 
-#include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/variant/vector3.hpp>
 
 namespace godot {

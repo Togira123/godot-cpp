@@ -34,7 +34,6 @@
 #include <cstdint>
 #include <new> // IWYU pragma: keep // `new` operators.
 
-#include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/core/error_macros.hpp>
 #include <godot_cpp/godot.hpp>
 

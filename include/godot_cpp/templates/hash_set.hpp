@@ -30,7 +30,6 @@
 
 #pragma once
 
-#include <godot_cpp/core/error_macros.hpp>
 #include <godot_cpp/core/memory.hpp>
 #include <godot_cpp/templates/hashfuncs.hpp>
 

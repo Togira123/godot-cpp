@@ -31,7 +31,6 @@
 #pragma once
 
 #include <godot_cpp/core/binder_common.hpp>
-#include <godot_cpp/variant/variant.hpp>
 
 namespace godot {
 

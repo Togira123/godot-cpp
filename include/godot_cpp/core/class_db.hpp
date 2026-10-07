@@ -32,8 +32,6 @@
 
 #include <gdextension_interface.h>
 
-#include <godot_cpp/core/defs.hpp>
-#include <godot_cpp/core/error_macros.hpp>
 #include <godot_cpp/core/method_bind.hpp>
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/core/print_string.hpp>

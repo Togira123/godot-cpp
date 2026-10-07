@@ -30,7 +30,6 @@
 
 #pragma once
 
-#include <godot_cpp/core/memory.hpp>
 #include <godot_cpp/godot.hpp>
 #include <godot_cpp/templates/list.hpp>
 #include <godot_cpp/templates/spin_lock.hpp>

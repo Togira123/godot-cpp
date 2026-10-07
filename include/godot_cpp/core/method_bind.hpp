@@ -33,10 +33,6 @@
 #include <godot_cpp/core/binder_common.hpp>
 #include <godot_cpp/core/type_info.hpp>
 
-#include <godot_cpp/core/memory.hpp>
-
-#include <gdextension_interface.h>
-
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/templates/local_vector.hpp>
 
